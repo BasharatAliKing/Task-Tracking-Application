@@ -51,11 +51,11 @@ export default function Blog() {
        <form action="" onSubmit={dataSubmit}>
        <div className={`flex flex-col ${taskbar?'hidden':'static'} `}>
          <label className='p-1 text-lg font-medium ' htmlFor="task">Task:</label>
-          <input className='p-1  active:border-red-300 focus:ring-amber-500 outline-none focus:border-red-300 ring-2 rounded-md' type="text" placeholder='Enter Task' value={task} onChange={(e)=>{setTask( e.target.value)}} />
+          <input className='p-1  active:border-red-300 focus:ring-amber-500 outline-none focus:border-red-300 ring-2 rounded-md w-full' type="text" placeholder='Enter Task' value={task} onChange={(e)=>{setTask( e.target.value)}} />
           <label className='p-1 text-lg font-medium ' htmlFor="task">Date:</label>
-          <input className='p-1 active:border-red-300 focus:ring-amber-500 outline-none focus:border-red-300 ring-2 rounded-md' type="date" placeholder='Enter Task' value={date} onChange={(e)=>{setDate(e.target.value)}}  />
+          <input className='p-1 active:border-red-300 focus:ring-amber-500 outline-none focus:border-red-300 ring-2 rounded-md w-full' type="date" placeholder='Enter Task' value={date} onChange={(e)=>{setDate(e.target.value)}}  />
           <label className='p-1 text-lg font-medium ' htmlFor="task">Time:</label>
-          <input className='p-1 active:border-red-300 focus:ring-amber-500 outline-none focus:border-red-300 ring-2 rounded-md' type="time" placeholder='Enter Task' value={time} onChange={(e)=>{setTime(e.target.value)}}  />
+          <input className='p-1 active:border-red-300 focus:ring-amber-500 outline-none focus:border-red-300 ring-2 rounded-md w-full' type="time" placeholder='Enter Task' value={time} onChange={(e)=>{setTime(e.target.value)}}  />
            <button className='p-1 bg-slate-600 text-white mt-3 w-20 mx-auto font-medium rounded-md active:bg-slate-800 outline-none '  >Save</button>
           </div>
        </form>
